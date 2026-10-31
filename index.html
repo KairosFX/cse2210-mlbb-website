@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Mobile Legends Website!</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="page1.html">Heroes</a> |
+            <a href="page2.html">Emblems and Talents</a> |
+            <a href="page3.html">Laning and Gameplay</a>
+            <hr>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Mobile Legends: Bang Bang</h2>
+        <p>Mobile Legends: Bang Bang (MLBB) is a mobile MOBA inspired by League of Legends. It was originally called Mobile Legends: 5v5 Arena. After a copyright dispute, it became Mobile Legends: Bang Bang.</p>
+        <p>In this game, two teams of five players try to destroy each other's base.</p>
+
+        <a href="https://en.wikipedia.org/wiki/Mobile_Legends:_Bang_Bang" target="_blank">
+            <img src="images/game_icon.webp" alt="Mobile Legends Bang Bang Logo" class="center">
+        </a>
+
+        <h3>Main Objectives</h3>
+        <p>These are the objectives I would rank from least to most important:</p>
+        <ol>
+            <li><b>Kills:</b> Taking out enemies makes it easier for your team to take objectives. However, kills alone do not win games.</li>
+            <li><b>Gold:</b> Gold helps you buy items. Having more gold than your lane opponent gives you greater carry potential.</li>
+            <li><b>Turrets:</b> You need to break enemy turrets to reach their base. Destroying them also creates space on the map and gives gold.</li>
+            <li><b>Turtle:</b> The first Turtle appears at about 2 minutes, near the EXP lane. The jungler, EXP laner, mid laner, and roamer usually help secure it. The normal Turtle gives team gold and shields. On the Healing Turtle map variant, an allied Turtle helps push the enemy's strongest lane and heals nearby teammates.</li>
+            <li><b>Lord:</b> Lord is the most important late-game objective. It helps push a lane, absorbs turret attacks, and makes it easier to reach the enemy base. Later Lords become stronger and defeating Lord also upgrades your minion waves.</li>
+        </ol>
+
+        <h3>Turtle and Lord</h3>
+
+        <div class="objective-images">
+            <img src="images/turtle.png" alt="Turtle" class="objective-image">
+            <img src="images/lord.png" alt="Lord" class="objective-image">
+        </div>
+
+        <h3>Random Gameplay Tip</h3>
+        <button onclick="showRandomTip()">Get a Tip</button>
+        <p id="randomTip">Click the button for a tip!</p>
+
+        <h3>Objective Questions</h3>
+        <ul>
+            <li>Do kills automatically win you the game?</li>
+            <li>What does gold help you do?</li>
+            <li>Why is Lord so important?</li>
+        </ul>
+
+        <h3>Questions and Answers</h3>
+        <button onclick="toggleAnswers()">Show / Hide Answers</button>
+        <table id="answerTable" border="1" cellpadding="6">
+            <tr><th>Question</th><th>Answer</th></tr>
+            <tr><td>Do kills automatically win you the game?</td><td>No. You still need to destroy the enemy base.</td></tr>
+            <tr><td>What does gold help you do?</td><td>Buy stronger items and gain an advantage.</td></tr>
+            <tr><td>Why is Lord so important?</td><td>It helps your team push turrets and reach the enemy base.</td></tr>
+        </table>
+
+        <h3>External Links</h3>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Mobile_Legends:_Bang_Bang" target="_blank">Wikipedia: Mobile Legends</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 My Mobile Legends Website</p>
+    </footer>
+
+</body>
+
+</html>

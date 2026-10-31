@@ -1,0 +1,112 @@
+/* A simple layout based on my previous HTML and CSS assignment */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+header, main, footer {
+    background-color: rgba(255, 255, 255, 0.88);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 25px;
+}
+
+header { text-align: center; }
+main { padding-bottom: 30px; }
+footer { text-align: center; }
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    color: #17365d;
+    text-align: center;
+}
+
+h2, h3 { margin-top: 24px; }
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+nav { text-align: center; line-height: 1.8; }
+nav a { margin: 0 4px; }
+a { color: #064ea2; }
+a:hover { color: #ca6a00; }
+
+ul, ol {
+    max-width: 760px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+li { padding: 5px 0; }
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    width: 90%;
+}
+
+th, td { border: 1px solid #555; padding: 10px; text-align: left; }
+th { background-color: #dce7f5; }
+
+.center {
+    display: block;
+    margin: 15px auto;
+    width: 50%;
+    max-width: 440px;
+    height: auto;
+}
+
+button, select {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding: 6px 10px;
+    margin: 7px;
+}
+
+button { cursor: pointer; }
+label { display: block; text-align: center; }
+button, select { vertical-align: middle; }
+main > button, main > select { display: block; margin: 10px auto; }
+
+@media (max-width: 600px) {
+    header, main, footer { padding: 12px; }
+    .center { width: 85%; }
+    table { width: 100%; }
+}
+
+.objective-image {
+    width: 190px;
+    height: auto;
+    margin: 10px;
+}
+
+.choice-image {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin: 15px auto;
+}
+
+.phase-image {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.objective-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

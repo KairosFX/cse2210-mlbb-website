@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laning and Gameplay</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Mobile Legends Website!</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="page1.html">Heroes</a> |
+            <a href="page2.html">Emblems and Talents</a> |
+            <a href="page3.html">Laning and Gameplay</a>
+            <hr>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Laning and Gameplay</h2>
+        <p>I played Mobile Legends a lot last summer and peaked at Mythical Immortal with 106 stars (highest rank title). Here are some tips based on my experience.</p>
+
+        <a href="https://mobile-legends.fandom.com/wiki/Battlefield_Guide" target="_blank">
+            <img src="images/laning.webp" alt="Mobile Legends Bang Bang Laning and Gameplay" class="center">
+        </a>
+
+        <h3>Early Game</h3>
+        <p>The early game is one of the most important phases of a match. An early lead can make the rest of the game easier and sometimes decide the outcome. The first Turtle spawns at about 2 minutes, near the EXP Lane. The jungler should full clear their jungle camps and get level 4. EXP, Mid, and Roam should also prepare to help at Turtle. Gold Lane is normally far away (on the other side of the map), so the Gold Laner often stays at their lane to farm instead.</p>
+        <p>Wave management is especially useful in Gold Lane because it forces the enemy gold laner to walk up if you freeze the lane (if they don't, they will lose gold and EXP) and provides more ganking opportunities. Mobile Legends is a very fast-paced game compared to League of Legends. So, the exp and mid laner benefit less from wave management. So, more often than not, they tend to fast clear or cut their minion wave and rotate to other lanes to earn more gold and join team fights.</p>
+
+        <h3>Mid Game</h3>
+        <p>By mid game, try to have taken at least one enemy turret, and ideally have pressure in several lanes. Taking turrets opens up the map, making it easier to rotate and catch enemies. You can then look for chances to take Lord.</p>
+
+        <h3>Late Game</h3>
+        <p>Lord helps your minions push toward the enemy base. The first Lord will not always end the match, but later Lords are stronger. Try to push with Lord instead of fighting randomly, because destroying the enemy base is still the goal.</p>
+
+        <h3>Gameplay Phase Selector</h3>
+        <label for="phaseChoice">Choose a phase:</label>
+        <select id="phaseChoice" onchange="showPhaseTip()">
+            <option value="">Choose one</option>
+            <option value="Early">Early Game</option>
+            <option value="Mid">Mid Game</option>
+            <option value="Late">Late Game</option>
+        </select>
+        <img id="phaseImage" class="phase-image" alt="" style="display:none">
+        <p id="phaseResult">Your gameplay tip will appear here.</p>
+
+        <h3>Gameplay Questions</h3>
+        <ul>
+            <li>When does the first Turtle spawn?</li>
+            <li>Which roles usually help at the first Turtle?</li>
+            <li>Why should you take turrets in the mid game?</li>
+        </ul>
+
+        <h3>Questions and Answers</h3>
+        <button onclick="toggleAnswers()">Show / Hide Answers</button>
+
+        <table id="answerTable" border="1" cellpadding="6">
+            <tr><th>Question</th><th>Answer</th></tr>
+            <tr><td>When does the first Turtle spawn?</td><td>About 2 minutes into the match.</td></tr>
+            <tr><td>Which roles usually help at the first Turtle?</td><td>Jungle, EXP, Mid, and Roam.</td></tr>
+            <tr><td>Why should you take turrets in the mid game?</td><td>To open the map and gain space.</td></tr>
+        </table>
+
+        <h3>External Links</h3>
+        <ul>
+            <li><a href="https://mobile-legends.fandom.com/wiki/Turtle" target="_blank">MLBB Wiki: Turtle</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 My Mobile Legends Website</p>
+    </footer>
+
+</body>
+
+</html>

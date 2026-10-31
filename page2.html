@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emblems and Talents</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Mobile Legends Website!</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="page1.html">Heroes</a> |
+            <a href="page2.html">Emblems and Talents</a> |
+            <a href="page3.html">Laning and Gameplay</a>
+            <hr>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Emblems and Talents</h2>
+        <p>Emblems are one of the most important parts of MLBB because they determine the early game. Choosing the right emblem depends on your hero, your playstyle, and the enemy team's composition.</p>
+
+        <a href="https://mobile-legends.fandom.com/wiki/Emblems" target="_blank">
+            <img src="images/emblems_and_talents.jpg" alt="Mobile Legends Bang Bang Emblem and Talents" class="center">
+        </a>
+
+        <h3>The Emblems</h3>
+        <ul>
+            <li>Common Emblem</li>
+            <li>Tank Emblem</li>
+            <li>Assassin Emblem</li>
+            <li>Fighter Emblem</li>
+            <li>Marksman Emblem</li>
+            <li>Mage Emblem</li>
+            <li>Support Emblem</li>
+        </ul>
+
+        <p>Every emblem setup has three talent slots. Some hybrid heroes can work well with more than one emblem, depending on what the team needs.</p>
+
+        <h3>Try an Emblem</h3>
+        <label for="emblemChoice">Pick an emblem:</label>
+
+        <select id="emblemChoice" onchange="showEmblemTip()">
+            <option value="">Choose an Emblem</option>
+            <option value="Common">Common</option>
+            <option value="Tank">Tank</option>
+            <option value="Assassin">Assassin</option>
+            <option value="Fighter">Fighter</option>
+            <option value="Marksman">Marksman</option>
+            <option value="Mage">Mage</option>
+            <option value="Support">Support</option>
+        </select>
+        <img id="emblemImage" class="choice-image" alt="" style="display:none">
+        <p id="emblemResult">The emblem description will appear here.</p>
+
+        <h3>Emblem Questions</h3>
+        <ul>
+            <li>How many emblem types are there?</li>
+            <li>How many talent slots do you get?</li>
+            <li>Can hybrid heroes use different emblems?</li>
+        </ul>
+
+        <h3>Questions and Answers</h3>
+        <button onclick="toggleAnswers()">Show / Hide Answers</button>
+
+        <table id="answerTable" border="1" cellpadding="6">
+            <tr><th>Question</th><th>Answer</th></tr>
+            <tr><td>How many emblem types are there?</td><td>7.</td></tr>
+            <tr><td>How many talent slots do you get?</td><td>3.</td></tr>
+            <tr><td>Can hybrid heroes use different emblems?</td><td>Yes, depending on the hero and matchup.</td></tr>
+        </table>
+
+        <h3>External Links</h3>
+        <ul>
+            <li><a href="https://mobile-legends.fandom.com/wiki/Emblems" target="_blank" rel="noopener noreferrer">MLBB Wiki: Emblems</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 My Mobile Legends Website</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Mobile Legends Website!</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="page1.html">Heroes</a> |
+            <a href="page2.html">Emblems and Talents</a> |
+            <a href="page3.html">Laning and Gameplay</a>
+            <hr>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Heroes</h2>
+        <p>Mobile Legends has six hero classes: Assassin, Marksman, Tank, Support, Fighter, and Mage. Each class has unique attributes, and some heroes are hybrids, meaning they fit into two classes, like Fighter/Assassin or Tank/Fighter.</p>
+
+        <a href="https://mobile-legends.fandom.com/wiki/Heroes" target="_blank">
+            <img src="images/heroes.webp" alt="Mobile Legends Bang Bang Heroes" class="center">
+        </a>
+
+        <h3>Hero Roles</h3>
+        <ul>
+            <li><b>Marksmen:</b> Usually play Gold Lane. They deal high damage later in the game and are often the team's main damage dealers.</li>
+            <li><b>Assassins:</b> Usually jungle. Their burst damage helps them clear jungle camps, while their high mobility allows them to rotate and gank other lanes.</li>
+            <li><b>Mages:</b> Usually play Mid Lane. They help in teamfights providing either poke or burst magic damage and more importantly crowd control.</li>
+            <li><b>Fighters:</b> Usually play EXP Lane. They excel in drawn-out battles by dealing sustained damage.</li>
+            <li><b>Tanks:</b> Often roam. They absorb damage and protect teammates.</li>
+            <li><b>Supports:</b> Often roam. They help with healing, shields, and crowd control.</li>
+        </ul>
+        <p>These are the usual positions, but different heroes and team compositions can change where you play.</p>
+
+        <h3>Choose a Hero Role</h3>
+        <label for="roleChoice">Select a hero class:</label>
+        <select id="roleChoice" onchange="showRoleDescription()">
+            <option value="">Choose one</option>
+            <option value="Marksman">Marksman</option>
+            <option value="Assassin">Assassin</option>
+            <option value="Mage">Mage</option>
+            <option value="Fighter">Fighter</option>
+            <option value="Tank">Tank</option>
+            <option value="Support">Support</option>
+        </select>
+        <img id="roleImage" class="choice-image" alt="" style="display:none">
+        <p id="roleResult">The role description will appear here.</p>     
+
+        <h3>Hero Questions</h3>
+        <ul>
+            <li>Which role usually plays Gold Lane?</li>
+            <li>Which hero class is common in the jungle?</li>
+            <li>Where do fighters usually start?</li>
+        </ul>
+
+        <h3>Questions and Answers</h3>
+        <button onclick="toggleAnswers()">Show / Hide Answers</button>
+        <table id="answerTable" border="1" cellpadding="6">
+            <tr><th>Question</th><th>Answer</th></tr>
+            <tr><td>Which role usually plays Gold Lane?</td><td>Marksman.</td></tr>
+            <tr><td>Which hero class is common in the jungle?</td><td>Assassin.</td></tr>
+            <tr><td>Where do fighters usually start?</td><td>EXP Lane.</td></tr>
+        </table>
+
+        <h3>External Links</h3>
+        <ul>
+            <li><a href="https://liquipedia.net/mobilelegends/Main_Page" target="_blank">Liquipedia: Mobile Legends</a></li>
+        </ul>
+    </main>
+    
+    <footer>
+        <hr>
+        <p>&copy; 2026 My Mobile Legends Website</p>
+    </footer>
+
+</body>
+
+</html>
